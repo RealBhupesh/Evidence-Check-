@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "financial-evidence-check"
+version = "0.1.0"
+description = "Financial claim verification with primary-source links, batch audits and explainable outcomes"
+requires-python = ">=3.10"
+dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "pydantic>=2,<3", "pypdf>=5,<7", "python-multipart>=0.0.9,<1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "httpx>=0.27"]
+
+[tool.setuptools.package-data]
+evidencecheck = ["data/*.json", "data/*.txt", "static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

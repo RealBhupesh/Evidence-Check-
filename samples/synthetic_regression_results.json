@@ -1,0 +1,731 @@
+{
+  "summary": {
+    "total": 90,
+    "passes": 90,
+    "true_controls": 45,
+    "deliberately_altered_controls": 45,
+    "method": "Deterministic synthetic controls from 45 curated financial fact entries. Not a field accuracy estimate; no unseen claims included."
+  },
+  "tests": [
+    {
+      "claim": "Apple FY2025 revenue was $416161 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2025 revenue was $428506 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2024 revenue was $391035 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2024 revenue was $403380 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2023 revenue was $383285 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2023 revenue was $395630 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2025 gross profit was $195201 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2025 gross profit was $207546 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2024 gross profit was $180683 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2024 gross profit was $193028 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2023 gross profit was $169148 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2023 gross profit was $181493 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2025 operating income was $133050 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2025 operating income was $145395 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2024 operating income was $123216 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2024 operating income was $135561 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2023 operating income was $114301 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2023 operating income was $126646 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2025 net income was $112010 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2025 net income was $124355 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2024 net income was $93736 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2024 net income was $106081 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2023 net income was $96995 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2023 net income was $109340 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2025 diluted EPS was $7.46 per share.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2025 diluted EPS was $9.46 per share.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2024 diluted EPS was $6.08 per share.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2024 diluted EPS was $8.08 per share.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2023 diluted EPS was $6.13 per share.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Apple FY2023 diluted EPS was $8.13 per share.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2025 revenue was $281724 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2025 revenue was $294069 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2024 revenue was $245122 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2024 revenue was $257467 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2023 revenue was $211915 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2023 revenue was $224260 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2025 gross profit was $193893 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2025 gross profit was $206238 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2024 gross profit was $171008 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2024 gross profit was $183353 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2023 gross profit was $146052 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2023 gross profit was $158397 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2025 operating income was $128528 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2025 operating income was $140873 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2024 operating income was $109433 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2024 operating income was $121778 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2023 operating income was $88523 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2023 operating income was $100868 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2025 net income was $101832 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2025 net income was $114177 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2024 net income was $88136 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2024 net income was $100481 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2023 net income was $72361 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2023 net income was $84706 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2025 diluted EPS was $13.64 per share.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2025 diluted EPS was $15.64 per share.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2024 diluted EPS was $11.8 per share.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2024 diluted EPS was $13.8 per share.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2023 diluted EPS was $9.68 per share.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "Microsoft FY2023 diluted EPS was $11.68 per share.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2025 revenue was $130497 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2025 revenue was $142842 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2024 revenue was $60922 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2024 revenue was $73267 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2023 revenue was $26974 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2023 revenue was $39319 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2025 gross profit was $97858 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2025 gross profit was $110203 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2024 gross profit was $44301 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2024 gross profit was $56646 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2023 gross profit was $15356 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2023 gross profit was $27701 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2025 operating income was $81453 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2025 operating income was $93798 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2024 operating income was $32972 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2024 operating income was $45317 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2023 operating income was $4224 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2023 operating income was $16569 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2025 net income was $72880 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2025 net income was $85225 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2024 net income was $29760 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2024 net income was $42105 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2023 net income was $4368 million.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2023 net income was $16713 million.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2025 diluted EPS was $2.94 per share.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2025 diluted EPS was $4.94 per share.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2024 diluted EPS was $1.19 per share.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2024 diluted EPS was $3.19 per share.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2023 diluted EPS was $0.17 per share.",
+      "injected_type": "true",
+      "actual_status": "match",
+      "expected": "match",
+      "detected": "match",
+      "passed": true
+    },
+    {
+      "claim": "NVIDIA FY2023 diluted EPS was $2.17 per share.",
+      "injected_type": "altered",
+      "actual_status": "mismatch",
+      "expected": "error",
+      "detected": "error",
+      "passed": true
+    }
+  ]
+}

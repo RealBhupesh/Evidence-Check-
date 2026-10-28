@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="EvidenceCheck is a source-grounded financial claim verification prototype, by Redowl Studio." />
+  <meta name="theme-color" content="#f5f5f7" />
+  <title>EvidenceCheck — Every number deserves a source.</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<div class="shell">
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="/" aria-label="EvidenceCheck home">
+        <div class="brand-glyph" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 4h11l5 5v19H8z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M18.5 4v6h5.5" stroke="currentColor" stroke-width="1.7"/><path d="m11 18 3.5 3.5 6.5-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <span class="brand-copy"><strong>EvidenceCheck</strong><small>by Redowl Studio</small></span>
+      </a>
+      <nav class="sidebar-nav" aria-label="Main navigation">
+        <button class="nav-button active" data-nav="workbench" type="button">Workspace</button>
+        <button class="nav-button" data-nav="library" type="button">Evidence library</button>
+        <button class="nav-button" data-nav="method" type="button">How it works</button>
+      </nav>
+      <div class="top-actions"><span class="top-indicator"><span class="pulse"></span>Interactive demo</span><span class="header-vline"></span><a class="top-help" href="https://www.sec.gov/about/developer-resources" target="_blank" rel="noopener">SEC sources <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <span id="crumb" class="sr-only">Workspace</span>
+  </header>
+
+  <main class="main-content">
+    <div id="workbench" class="page active">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <div class="hero-kicker"><span class="kicker-dot"></span> Financial intelligence, grounded in evidence <span class="kicker-bullet">·</span> Portfolio prototype</div>
+            <h1 id="hero-title">Every number<br />deserves a<br /><span>source.</span></h1>
+            <p>Financial AI makes convincing claims. EvidenceCheck helps you find out which ones actually match the filing.</p>
+            <div class="hero-actions"><button class="hero-primary" id="hero-try-sample" type="button">Explore the workspace <span aria-hidden="true">↗</span></button><button id="view-method" class="hero-secondary" type="button">See how it works <span aria-hidden="true">→</span></button></div>
+            <div class="hero-meta"><span class="meta-tick">✓</span> Source-linked figures <span class="meta-separator">·</span> <span class="meta-tick">✓</span> No sign-up required</div>
+          </div>
+          <div class="hero-visual" aria-label="Illustration of a financial claim being checked against a source">
+            <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+            <div class="floating-card main-floating">
+              <div class="floating-head"><span class="mini-logo">E</span><span>Claim verification</span><span class="mini-dots">•••</span></div>
+              <div class="floating-label">REPORTED REVENUE · DEMONSTRATION</div>
+              <div class="floating-value">$120.0<span>B</span></div>
+              <div class="floating-divider"></div>
+              <div class="floating-result"><span class="result-dot"></span><span>Discrepancy detected</span><span class="result-arrow">↗</span></div>
+              <p>Source indicates <strong>$100.0B</strong></p>
+              <div class="mini-source">↗ Original annual filing <span>Verified source</span></div>
+            </div>
+            <div class="floating-stamp"><span class="stamp-symbol">✓</span><span><strong>Traceable evidence</strong><small>Every finding has a source</small></span></div>
+            <div class="visual-caption">Illustrative example · not an actual company result</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="content-container">
+        <div class="announcement"><span class="announcement-icon" aria-hidden="true">i</span><p><strong>A transparent demonstration.</strong> Reference values come from historical published statements. Example claims contain deliberately introduced mistakes.</p><span class="announcement-tag">FY2023–FY2025</span></div>
+
+        <section class="overview" aria-labelledby="overview-title">
+          <div class="eyebrow">AT A GLANCE</div>
+          <div class="section-title-row"><div><h2 id="overview-title">A clearer picture, instantly.</h2><p>One verification run. Four useful signals.</p></div><span class="overview-small">Current audit</span></div>
+          <div class="stats" aria-label="Audit statistics" aria-live="polite">
+            <div class="stat-card"><div class="stat-caption">Claims checked</div><div class="stat-number" id="stat-total">—</div><div class="stat-foot">Total assertions</div></div>
+            <div class="stat-card"><div class="stat-caption">Consistent with source</div><div class="stat-number" id="stat-match">—</div><div class="stat-foot"><span class="stat-dot green"></span>Values align</div></div>
+            <div class="stat-card"><div class="stat-caption">Discrepancies</div><div class="stat-number" id="stat-issues">—</div><div class="stat-foot"><span class="stat-dot orange"></span>Needs attention</div></div>
+            <div class="stat-card"><div class="stat-caption">Human review</div><div class="stat-number" id="stat-review">—</div><div class="stat-foot"><span class="stat-dot gray"></span>Insufficient evidence</div></div>
+          </div>
+        </section>
+
+        <section class="workspace-section" id="audit-workspace">
+          <div class="section-title-row workspace-section-heading"><div><div class="eyebrow">01 / THE WORKSPACE</div><h2>Put the numbers to the test.</h2><p>Paste financial claims, choose a company, and get source-grounded verdicts.</p></div><div class="inline-badge"><span class="pulse"></span> Ready to verify</div></div>
+          <div class="workspace-grid">
+            <section class="panel composer" aria-label="Claims to audit">
+              <div class="panel-heading"><div><h3>Claims to check</h3><div class="panel-description">One financial claim per line. Include the company, fiscal year, metric and USD amount.</div></div><span class="panel-status">01 / INPUT</span></div>
+              <div class="editor-tools"><div class="pill-selector" role="group" aria-label="Company context"><button class="company-choice selected" data-company="" type="button">Auto detect</button><button class="company-choice" data-company="AAPL" type="button">Apple</button><button class="company-choice" data-company="MSFT" type="button">Microsoft</button><button class="company-choice" data-company="NVDA" type="button">NVIDIA</button></div><button class="text-link" id="reset-demo" type="button"><span aria-hidden="true">↺</span> Reset example</button></div>
+              <div class="textarea-wrap"><label class="sr-only" for="claim-input">Financial claims to verify</label><textarea id="claim-input" spellcheck="false" placeholder="Apple FY2025 revenue was $416.161 billion.&#10;Microsoft FY2024 net income was $88.136 billion."></textarea></div>
+              <div class="editor-bottom"><span id="line-count">0 assertions</span><label class="upload-link" for="upload-file"><span aria-hidden="true">↑</span> Import PDF or TXT<input type="file" accept=".pdf,.txt" id="upload-file" /></label></div>
+              <div class="action-strip"><button class="primary-button" id="run-audit" type="button"><span aria-hidden="true">✳</span> Verify claims <span class="button-arrow">→</span></button><div class="action-secondary"><button id="download-csv" class="secondary-button" type="button" disabled>↓ Export CSV</button><button id="print-report" class="secondary-button" type="button" disabled>⎙ Print</button></div></div>
+              <div class="keyboard-hint">Tip: press <kbd>⌘</kbd>/<kbd>Ctrl</kbd> + <kbd>Enter</kbd> to verify</div>
+              <div id="error-box" class="error-box" hidden role="alert"></div>
+            </section>
+            <aside class="right-rail" aria-label="Evidence coverage and capabilities">
+              <section class="side-panel"><div class="side-card-icon" aria-hidden="true">▧</div><div class="section-overline">THE SOURCE LIBRARY</div><h3>Grounded in published facts.</h3><p>Curated income-statement values. Real sources. No made-up reference figures.</p><div class="company-bubble-row"><span class="co-bubble apple" title="Apple">A</span><span class="co-bubble microsoft" title="Microsoft">M</span><span class="co-bubble nvidia" title="NVIDIA">N</span><span class="coverage-label">3 public companies</span></div><div class="rail-row"><span>Evidence records</span><strong>45</strong></div><div class="rail-row"><span>Fiscal years</span><strong>2023–2025</strong></div><div class="rail-row"><span>Financial metrics</span><strong>5</strong></div><button id="open-library" class="rail-action" type="button">Browse evidence library <span aria-hidden="true">↗</span></button></section>
+              <section class="side-panel note-panel"><div class="section-overline">BUILT FOR CLARITY</div><div class="check-row"><span>✓</span> Financial amount mismatches</div><div class="check-row"><span>✓</span> Wrong fiscal periods</div><div class="check-row"><span>✓</span> Currency scale checks</div><div class="check-row"><span>✓</span> Clickable filing references</div><div class="check-row muted"><span>○</span> Unverifiable claims flagged</div></section>
+            </aside>
+          </div>
+        </section>
+
+        <section class="results panel" id="results-section">
+          <div class="results-top"><div><div class="eyebrow">02 / YOUR RESULTS</div><h2>Evidence review.</h2><p class="panel-description" id="result-helper">Run a check to see line-by-line verdicts and source citations.</p></div><span id="report-count" class="record-count">No audit yet</span></div>
+          <div id="outcome-bar" class="outcome-bar" hidden aria-label="Composition of verification outcomes"><div id="bar-match"></div><div id="bar-issues"></div><div id="bar-review"></div></div>
+          <div id="results-container" aria-live="polite"><div class="empty-state"><div class="empty-symbol">✓</div><strong>Your evidence will appear here.</strong><span>Load the example or paste your own financial assertions.</span></div></div>
+          <div class="results-footer" id="results-footer" hidden><span>A source-consistent match is not an independent audit opinion.</span><a href="#" id="source-guide">Understand the method <span aria-hidden="true">↗</span></a></div>
+        </section>
+      </div>
+    </div>
+
+    <div id="library" class="page">
+      <section class="subpage-hero"><div class="subpage-kicker">EVIDENCE / DATA LIBRARY</div><h1>Know the source.<br/><span>Trust the result.</span></h1><p>45 historical financial facts, linked directly to published annual filings. Explore the evidence behind every supported check.</p><span class="subpage-note">Historic snapshot, not a live market-data feed.</span></section>
+      <div class="content-container library-content"><div class="section-title-row"><div><div class="eyebrow">THE REFERENCE DATA</div><h2>A transparent foundation.</h2><p>Filter by company, year, or metric.</p></div><span class="inline-badge"><span class="pulse"></span> 45 source records</span></div>
+        <div class="panel library-card"><div class="library-filters"><label for="filter-company">Company<select id="filter-company"><option value="">All companies</option><option value="AAPL">Apple</option><option value="MSFT">Microsoft</option><option value="NVDA">NVIDIA</option></select></label><label for="filter-year">Fiscal year<select id="filter-year"><option value="">All years</option><option>2025</option><option>2024</option><option>2023</option></select></label><label for="filter-metric">Metric<select id="filter-metric"><option value="">All metrics</option><option value="revenue">Revenue</option><option value="gross_profit">Gross profit</option><option value="operating_income">Operating income</option><option value="net_income">Net income</option><option value="diluted_eps">Diluted EPS</option></select></label><div class="filter-count" id="filter-count">45 records</div></div><div class="table-scroll"><table class="facts-table"><thead><tr><th>COMPANY</th><th>YEAR</th><th>METRIC</th><th>VALUE</th><th>ORIGINAL SOURCE</th></tr></thead><tbody id="facts-body"></tbody></table></div></div>
+      </div>
+    </div>
+
+    <div id="method" class="page">
+      <section class="subpage-hero method-hero"><div class="subpage-kicker">THE METHODOLOGY</div><h1>Evidence first.<br/><span>Always.</span></h1><p>Designed to show not just what matches, but why. And just as importantly, what remains uncertain.</p></section>
+      <div class="content-container method-content"><div class="eyebrow">OUR PROCESS</div><div class="section-title-row"><div><h2>Four simple steps.</h2><p>A repeatable process, with a link back to the source.</p></div></div>
+        <div class="method-grid"><article class="method-card"><span class="step-count">01</span><h3>Read the claim.</h3><p>Identify one company, fiscal year, supported metric and USD amount. Ambiguous language is flagged rather than guessed.</p></article><article class="method-card"><span class="step-count">02</span><h3>Find the evidence.</h3><p>Locate the matching financial figure in a curated, source-linked reference record.</p></article><article class="method-card"><span class="step-count">03</span><h3>Compare precisely.</h3><p>Normalize millions and billions, account for stated rounding precision, and detect mismatched fiscal years.</p></article><article class="method-card"><span class="step-count">04</span><h3>Explain the outcome.</h3><p>Display the source, expected value and comparison, or a clear reason human review is required.</p></article></div>
+        <div class="panel limit-panel"><div class="section-overline">HONEST ABOUT THE LIMITS</div><h2>Transparency is part of accuracy.</h2><p>EvidenceCheck is a functional portfolio prototype, not an accounting audit, investment advice or a general AI-accuracy benchmark. Today it supports only Apple, Microsoft and NVIDIA; five standard metrics; and a curated FY2023–FY2025 snapshot. Historical figures were manually collected from published filings. The prototype does not automatically retrieve filings, reconcile private documents, or certify a model's broader financial accuracy. Unsupported cases are flagged for human review.</p><p class="mini-note">Production extensions could include live SEC companyfacts/XBRL ingestion, citation-level document extraction, authenticated workspaces, broader evaluation tests and human-review approval flows.</p></div>
+        <div class="panel links-panel"><div class="section-overline">PUBLIC SOURCES</div><a href="https://www.sec.gov/about/developer-resources" target="_blank" rel="noopener">SEC developer resources ↗</a><a href="https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm" target="_blank" rel="noopener">Apple FY2025 Form 10-K ↗</a><a href="https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm" target="_blank" rel="noopener">Microsoft FY2025 Form 10-K ↗</a><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm" target="_blank" rel="noopener">NVIDIA FY2025 Form 10-K ↗</a></div>
+      </div>
+    </div>
+
+    <footer class="app-footer"><div><strong>EvidenceCheck.</strong><span>Built by Redowl Studio · 2026</span></div><p>A financial verification prototype.<br/>Not investment advice or an independent audit.</p></footer>
+  </main>
+</div>
+<script src="/static/app.js" defer></script>
+</body>
+</html>
